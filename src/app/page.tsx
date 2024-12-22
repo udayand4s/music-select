@@ -1,8 +1,12 @@
 import React from 'react'
+import { Appbar } from './components/Appbar'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Appbar/>
+
+      </div>
   )
 }
 
