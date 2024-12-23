@@ -1,6 +1,9 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  daisyui: {
+    themes: ["black"], // Specifies the theme you want to use
+  },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,5 +17,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")], // Add daisyUI here
 } satisfies Config;
